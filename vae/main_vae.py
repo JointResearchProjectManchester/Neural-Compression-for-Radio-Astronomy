@@ -150,8 +150,20 @@ while i < num_training_updates:
         images_flat = images.view(images.size(0), -1)
 
         # Compute reconstruction loss using a multivariate Gaussian likelihood on GPU.
+
+        
+        # Covariance Matrix Loss
         mvn = MultivariateNormal(loc=x_recon_flat, covariance_matrix=correlation_matrix)
         recon_loss = -mvn.log_prob(images_flat).sum()
+        
+
+        """
+        # Identity Matrix Loss
+        D = images_flat.size(1)
+        identity_cov = torch.eye(D, device=device)
+        mvn = MultivariateNormal(loc=x_recon_flat, covariance_matrix=identity_cov)
+        recon_loss = -mvn.log_prob(images_flat).sum()
+        """
 
         # KL Divergence between q(z|x) and the standard normal p(z)
         q_z_x = Normal(mean, torch.exp(0.5 * logvar))
@@ -191,9 +203,9 @@ while i < num_training_updates:
             print(f"{i} iterations, loss: {np.mean(train_total_loss[-100:]):.3f}, "
                   f"bits per dimension: {np.mean(train_bits_per_dim[-100:]):.5f}")
             
-            # Clean up variables to help GPU memory management
-            del images, mean, logvar, std, eps, z, x_recon, x_recon_flat, images_flat
-            torch.cuda.empty_cache()
+        # Clean up variables to help GPU memory management
+        del images, mean, logvar, std, eps, z, x_recon, x_recon_flat, images_flat
+        torch.cuda.empty_cache()
 
         # --------------------
         # Every 1000 iterations: perform validation
@@ -208,8 +220,7 @@ while i < num_training_updates:
             with torch.no_grad():
                 for val_images in valid_loader:
                     val_images = val_images.to(device)
-                    if val_images.dim() == 4 and val_images.size(1) == 1:
-                        val_images = val_images.squeeze(1)
+                    val_images = val_images.squeeze(2)
                     
                     mean, logvar = encoder(val_images)
                     std = torch.exp(0.5 * logvar)
@@ -220,9 +231,17 @@ while i < num_training_updates:
                     x_recon_flat = x_recon.view(val_images.size(0), -1)
                     val_images_flat = val_images.view(val_images.size(0), -1)
                     
+                    # Covariance Matrix Loss
                     mvn = MultivariateNormal(loc=x_recon_flat, covariance_matrix=correlation_matrix)
                     recon_loss_val = -mvn.log_prob(val_images_flat).sum()
                     
+                    """ 
+                    # Identity Matrix Loss
+                    D = images_flat.size(1)  
+                    identity_cov = torch.eye(D, device=device)
+                    mvn = MultivariateNormal(loc=x_recon_flat, covariance_matrix=identity_cov)
+                    recon_loss = -mvn.log_prob(images_flat).sum()"""
+
                     q_z_x = Normal(mean, torch.exp(0.5 * logvar))
                     p_z = Normal(torch.zeros_like(mean), torch.ones_like(logvar))
                     kl_div_val = kl_divergence(q_z_x, p_z).sum() / mean.size(0)

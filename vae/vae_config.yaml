@@ -1,6 +1,6 @@
 project: vq_vae_sem_2
 entity: deya-03-the-university-of-manchester
-program: /share/nas2_3/adey/astro/clean_code/main_vae.py  # Path to your main Python script
+program: /share/nas2_3/adey/astro/clean_code/Neural-Compression-for-Radio-Astronomy/vae/main_vae.py  # Path to your main Python script
 
 metric:
   name: train/total_loss_per_100
