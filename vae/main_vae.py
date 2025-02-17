@@ -122,8 +122,8 @@ encoder.train()
 decoder.train()
 
 # Precompute the correlation matrix and move it to GPU.
-correlation_matrix = find_correlation_matrix(image_size, sigma)
-correlation_matrix = torch.from_numpy(correlation_matrix).float().to(device)
+#correlation_matrix = find_correlation_matrix(image_size, sigma)
+#correlation_matrix = torch.from_numpy(correlation_matrix).float().to(device)
 
 print("Beginning training loop...")
 
@@ -153,17 +153,19 @@ while i < num_training_updates:
 
         
         # Covariance Matrix Loss
+        """
         mvn = MultivariateNormal(loc=x_recon_flat, covariance_matrix=correlation_matrix)
         recon_loss = -mvn.log_prob(images_flat).sum()
+        """
         
 
-        """
+        
         # Identity Matrix Loss
         D = images_flat.size(1)
         identity_cov = torch.eye(D, device=device)
         mvn = MultivariateNormal(loc=x_recon_flat, covariance_matrix=identity_cov)
         recon_loss = -mvn.log_prob(images_flat).sum()
-        """
+        
 
         # KL Divergence between q(z|x) and the standard normal p(z)
         q_z_x = Normal(mean, torch.exp(0.5 * logvar))
@@ -232,15 +234,15 @@ while i < num_training_updates:
                     val_images_flat = val_images.view(val_images.size(0), -1)
                     
                     # Covariance Matrix Loss
+                    """
                     mvn = MultivariateNormal(loc=x_recon_flat, covariance_matrix=correlation_matrix)
                     recon_loss_val = -mvn.log_prob(val_images_flat).sum()
+                    """
                     
-                    """ 
+                    
                     # Identity Matrix Loss
-                    D = images_flat.size(1)  
-                    identity_cov = torch.eye(D, device=device)
                     mvn = MultivariateNormal(loc=x_recon_flat, covariance_matrix=identity_cov)
-                    recon_loss = -mvn.log_prob(images_flat).sum()"""
+                    recon_loss_val = -mvn.log_prob(val_images_flat).sum()
 
                     q_z_x = Normal(mean, torch.exp(0.5 * logvar))
                     p_z = Normal(torch.zeros_like(mean), torch.ones_like(logvar))
