@@ -1,0 +1,4 @@
+*.sh
+*.yaml
+__pycache__/
+wandb/
