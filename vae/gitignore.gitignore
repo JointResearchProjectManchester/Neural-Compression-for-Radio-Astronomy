@@ -1,9 +1,0 @@
-# Ignore all .sh and .yaml files
-*.sh
-*.yaml
-
-# Ignore the wandb directory
-wandb/
-
-# Ignore Python cache files
-__pycache__/
