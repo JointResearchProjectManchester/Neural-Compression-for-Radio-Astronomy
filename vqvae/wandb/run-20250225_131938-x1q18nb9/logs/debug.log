@@ -1,0 +1,29 @@
+2025-02-25 13:19:38,695 INFO    MainThread:440799 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2025-02-25 13:19:38,695 INFO    MainThread:440799 [wandb_setup.py:_flush():79] Configure stats pid to 440799
+2025-02-25 13:19:38,695 INFO    MainThread:440799 [wandb_setup.py:_flush():79] Loading settings from /home/adey/.config/wandb/settings
+2025-02-25 13:19:38,695 INFO    MainThread:440799 [wandb_setup.py:_flush():79] Loading settings from /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/settings
+2025-02-25 13:19:38,695 WARNING MainThread:440799 [wandb_setup.py:_flush():79] Unknown environment variable: WANDB_DATA_DIR
+2025-02-25 13:19:38,695 WARNING MainThread:440799 [wandb_setup.py:_flush():79] Unknown environment variable: WANDB_CACHE_DIR
+2025-02-25 13:19:38,695 INFO    MainThread:440799 [wandb_setup.py:_flush():79] Loading settings from environment variables: {'project': 'vq_vae_sem_2', 'entity': 'deya-03-the-university-of-manchester', 'api_key': '***REDACTED***', '_require_legacy_service': 'true', 'sweep_id': 'd73z0l9y', 'root_dir': '/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae', 'run_id': 'x1q18nb9', 'sweep_param_path': '/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/sweep-d73z0l9y/config-x1q18nb9.yaml'}
+2025-02-25 13:19:38,695 INFO    MainThread:440799 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2025-02-25 13:19:38,695 INFO    MainThread:440799 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'vqvae/main_autoencoder.py', 'program_abspath': '/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder.py', 'program': '/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder.py'}
+2025-02-25 13:19:38,695 INFO    MainThread:440799 [wandb_setup.py:_flush():79] Applying login settings: {}
+2025-02-25 13:19:38,695 INFO    MainThread:440799 [wandb_init.py:_log_setup():534] Logging user logs to /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250225_131938-x1q18nb9/logs/debug.log
+2025-02-25 13:19:38,695 INFO    MainThread:440799 [wandb_init.py:_log_setup():535] Logging internal logs to /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250225_131938-x1q18nb9/logs/debug-internal.log
+2025-02-25 13:19:38,696 INFO    MainThread:440799 [wandb_init.py:init():621] calling init triggers
+2025-02-25 13:19:38,696 INFO    MainThread:440799 [wandb_init.py:init():628] wandb.init called with sweep_config: {'num_training_updates': 1003}
+config: {'architecture': 'AE'}
+2025-02-25 13:19:38,696 INFO    MainThread:440799 [wandb_init.py:init():671] starting backend
+2025-02-25 13:19:38,696 INFO    MainThread:440799 [wandb_init.py:init():675] sending inform_init request
+2025-02-25 13:19:38,705 INFO    MainThread:440799 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-02-25 13:19:38,706 INFO    MainThread:440799 [wandb_init.py:init():688] backend started and connected
+2025-02-25 13:19:38,720 INFO    MainThread:440799 [wandb_run.py:_config_callback():1390] config_cb None None {'num_training_updates': 1003}
+2025-02-25 13:19:38,721 INFO    MainThread:440799 [wandb_init.py:init():783] updated telemetry
+2025-02-25 13:19:38,737 INFO    MainThread:440799 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2025-02-25 13:19:39,234 INFO    MainThread:440799 [wandb_init.py:init():867] starting run threads in backend
+2025-02-25 13:19:39,382 INFO    MainThread:440799 [wandb_run.py:_console_start():2463] atexit reg
+2025-02-25 13:19:39,383 INFO    MainThread:440799 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2025-02-25 13:19:39,383 INFO    MainThread:440799 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2025-02-25 13:19:39,383 INFO    MainThread:440799 [wandb_run.py:_redirect():2401] Redirects installed.
+2025-02-25 13:19:39,385 INFO    MainThread:440799 [wandb_init.py:init():911] run started, returning control to user process
+2025-02-25 13:21:45,597 WARNING MsgRouterThr:440799 [router.py:message_loop():77] message_loop has been closed

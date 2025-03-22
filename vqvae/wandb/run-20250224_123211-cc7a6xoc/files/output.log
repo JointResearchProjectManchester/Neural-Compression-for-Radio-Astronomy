@@ -1,0 +1,6 @@
+Starting training...
+Shape of images before processing: torch.Size([4, 1, 1, 150, 150])
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder.py", line 134, in <module>
+    loss = -mvn.log_prob(images_flat_subset).sum()
+NameError: name 'images_flat_subset' is not defined

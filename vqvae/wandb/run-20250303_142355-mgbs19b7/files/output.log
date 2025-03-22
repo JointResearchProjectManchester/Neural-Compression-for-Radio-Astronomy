@@ -1,0 +1,6 @@
+Starting training...
+Shape of images before processing: torch.Size([4, 1, 1, 150, 150])
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option2.py", line 150, in <module>
+    recon_reshaped = recon_flat.view(image_size,height,image_size)
+NameError: name 'height' is not defined

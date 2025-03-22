@@ -1,0 +1,6 @@
+Starting training...
+Shape of images before processing: torch.Size([4, 1, 1, 150, 150])
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option2.py", line 151, in <module>
+    D_total = images_flat.size(0) * total_pixels
+NameError: name 'subset_indices' is not defined

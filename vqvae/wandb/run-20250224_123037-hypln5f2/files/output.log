@@ -1,0 +1,6 @@
+Starting training...
+Shape of images before processing: torch.Size([4, 1, 1, 150, 150])
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder.py", line 150, in <module>
+    bits_per_dim = loss / (images.size(0) * images.size(2) * images.size(3)*np.log(2))  # Divide by log(2) to convert to bits per dim.
+NameError: name 'loss' is not defined

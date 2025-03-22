@@ -1,0 +1,6 @@
+
+Starting training...
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 242, in <module>
+    loss = mvg_nll_block(cov, images_flat, recon_flat, n).sum()
+NameError: name 'mvg_nll_block' is not defined

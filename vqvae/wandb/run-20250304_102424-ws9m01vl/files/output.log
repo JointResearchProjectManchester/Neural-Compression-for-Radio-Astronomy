@@ -1,0 +1,12 @@
+
+Starting training...
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 227, in <module>
+    loss.backward()
+  File "/share/nas2_3/adey/.venv/lib/python3.9/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/share/nas2_3/adey/.venv/lib/python3.9/site-packages/torch/autograd/__init__.py", line 190, in backward
+    grad_tensors_ = _make_grads(tensors, grad_tensors_, is_grads_batched=False)
+  File "/share/nas2_3/adey/.venv/lib/python3.9/site-packages/torch/autograd/__init__.py", line 85, in _make_grads
+    raise RuntimeError("grad can be implicitly created only for scalar outputs")
+RuntimeError: grad can be implicitly created only for scalar outputs

@@ -1,0 +1,1 @@
+{"train/loss": 83467.859375, "train/bits_per_dim": 1.3379851579666138, "train/mean_loss": 0.9274206757545471, "_timestamp": 1742658828.9775953, "_runtime": 42.805912256240845, "_step": 999, "_wandb": {"runtime": 43}}

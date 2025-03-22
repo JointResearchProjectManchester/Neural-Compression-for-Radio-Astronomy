@@ -1,0 +1,35 @@
+2025-02-24 12:18:54,575 INFO    MainThread:274140 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2025-02-24 12:18:54,575 INFO    MainThread:274140 [wandb_setup.py:_flush():79] Configure stats pid to 274140
+2025-02-24 12:18:54,575 INFO    MainThread:274140 [wandb_setup.py:_flush():79] Loading settings from /home/adey/.config/wandb/settings
+2025-02-24 12:18:54,576 INFO    MainThread:274140 [wandb_setup.py:_flush():79] Loading settings from /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/settings
+2025-02-24 12:18:54,576 WARNING MainThread:274140 [wandb_setup.py:_flush():79] Unknown environment variable: WANDB_DATA_DIR
+2025-02-24 12:18:54,576 WARNING MainThread:274140 [wandb_setup.py:_flush():79] Unknown environment variable: WANDB_CACHE_DIR
+2025-02-24 12:18:54,576 INFO    MainThread:274140 [wandb_setup.py:_flush():79] Loading settings from environment variables: {'project': 'vq_vae_sem_2', 'entity': 'deya-03-the-university-of-manchester', 'api_key': '***REDACTED***', '_require_legacy_service': 'true', 'sweep_id': 'cq5mah88', 'root_dir': '/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae', 'run_id': '1s4hlai3', 'sweep_param_path': '/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/sweep-cq5mah88/config-1s4hlai3.yaml'}
+2025-02-24 12:18:54,576 INFO    MainThread:274140 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2025-02-24 12:18:54,576 INFO    MainThread:274140 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'vqvae/main_autoencoder.py', 'program_abspath': '/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder.py', 'program': '/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder.py'}
+2025-02-24 12:18:54,576 INFO    MainThread:274140 [wandb_setup.py:_flush():79] Applying login settings: {}
+2025-02-24 12:18:54,576 INFO    MainThread:274140 [wandb_init.py:_log_setup():534] Logging user logs to /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250224_121854-1s4hlai3/logs/debug.log
+2025-02-24 12:18:54,576 INFO    MainThread:274140 [wandb_init.py:_log_setup():535] Logging internal logs to /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250224_121854-1s4hlai3/logs/debug-internal.log
+2025-02-24 12:18:54,576 INFO    MainThread:274140 [wandb_init.py:init():621] calling init triggers
+2025-02-24 12:18:54,577 INFO    MainThread:274140 [wandb_init.py:init():628] wandb.init called with sweep_config: {'latent_dim': 64}
+config: {'architecture': 'AE', 'Correlation Matrix Type': 'Full Formulation'}
+2025-02-24 12:18:54,577 INFO    MainThread:274140 [wandb_init.py:init():671] starting backend
+2025-02-24 12:18:54,577 INFO    MainThread:274140 [wandb_init.py:init():675] sending inform_init request
+2025-02-24 12:18:54,587 INFO    MainThread:274140 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-02-24 12:18:54,587 INFO    MainThread:274140 [wandb_init.py:init():688] backend started and connected
+2025-02-24 12:18:54,601 INFO    MainThread:274140 [wandb_run.py:_config_callback():1390] config_cb None None {'latent_dim': 64}
+2025-02-24 12:18:54,602 INFO    MainThread:274140 [wandb_init.py:init():783] updated telemetry
+2025-02-24 12:18:54,632 INFO    MainThread:274140 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2025-02-24 12:18:54,996 INFO    MainThread:274140 [wandb_init.py:init():867] starting run threads in backend
+2025-02-24 12:18:55,783 INFO    MainThread:274140 [wandb_run.py:_console_start():2463] atexit reg
+2025-02-24 12:18:55,784 INFO    MainThread:274140 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2025-02-24 12:18:55,784 INFO    MainThread:274140 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2025-02-24 12:18:55,784 INFO    MainThread:274140 [wandb_run.py:_redirect():2401] Redirects installed.
+2025-02-24 12:18:55,791 INFO    MainThread:274140 [wandb_init.py:init():911] run started, returning control to user process
+2025-02-24 12:22:25,253 INFO    MainThread:274140 [wandb_run.py:_finish():2158] finishing run deya-03-the-university-of-manchester/vq_vae_sem_2/1s4hlai3
+2025-02-24 12:22:25,254 INFO    MainThread:274140 [wandb_run.py:_atexit_cleanup():2426] got exitcode: 0
+2025-02-24 12:22:25,254 INFO    MainThread:274140 [wandb_run.py:_restore():2408] restore
+2025-02-24 12:22:25,255 INFO    MainThread:274140 [wandb_run.py:_restore():2414] restore done
+2025-02-24 12:22:30,357 INFO    MainThread:274140 [wandb_run.py:_footer_history_summary_info():3975] rendering history
+2025-02-24 12:22:30,358 INFO    MainThread:274140 [wandb_run.py:_footer_history_summary_info():4007] rendering summary
+2025-02-24 12:22:30,372 INFO    MainThread:274140 [wandb_run.py:_footer_sync_info():3934] logging synced files

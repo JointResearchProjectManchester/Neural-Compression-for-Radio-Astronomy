@@ -1,0 +1,6 @@
+Starting training...
+Shape of images before processing: torch.Size([4, 1, 1, 150, 150])
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option1.py", line 136, in <module>
+    identity = torch.eye(total_pixels, device=images.device)  # Create identity matrix
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.89 GiB (GPU 0; 39.41 GiB total capacity; 3.86 GiB already allocated; 1.50 GiB free; 3.90 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

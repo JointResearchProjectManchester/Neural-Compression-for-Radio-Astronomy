@@ -1,0 +1,8 @@
+
+Starting training...
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 216, in <module>
+    loss = mvg_nll_block(B,L_B, images_flat, recon_flat, n).sum()
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 22, in mvg_nll_block
+    batch_size, d = x.shape[1]
+TypeError: cannot unpack non-iterable int object

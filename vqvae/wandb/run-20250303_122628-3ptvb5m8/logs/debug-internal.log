@@ -1,0 +1,184 @@
+2025-03-03 12:26:28,991 INFO    StreamThr :344687 [internal.py:wandb_internal():85] W&B internal server running at pid: 344687, started at: 2025-03-03 12:26:28.989366
+2025-03-03 12:26:28,994 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: status
+2025-03-03 12:26:29,005 INFO    WriterThread:344687 [datastore.py:open_for_write():87] open: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/run-3ptvb5m8.wandb
+2025-03-03 12:26:29,006 DEBUG   SenderThread:344687 [sender.py:send():389] send: header
+2025-03-03 12:26:29,080 DEBUG   SenderThread:344687 [sender.py:send():389] send: run
+2025-03-03 12:26:29,431 INFO    SenderThread:344687 [dir_watcher.py:__init__():211] watching files in: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files
+2025-03-03 12:26:29,432 INFO    SenderThread:344687 [sender.py:_start_run_threads():1157] run started: 3ptvb5m8 with start time 1741004788.989636
+2025-03-03 12:26:29,448 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: run_start
+2025-03-03 12:26:29,455 DEBUG   HandlerThread:344687 [system_info.py:__init__():26] System info init
+2025-03-03 12:26:29,455 DEBUG   HandlerThread:344687 [system_info.py:__init__():41] System info init done
+2025-03-03 12:26:29,455 INFO    HandlerThread:344687 [system_monitor.py:start():194] Starting system monitor
+2025-03-03 12:26:29,455 INFO    SystemMonitor:344687 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-03-03 12:26:29,455 INFO    HandlerThread:344687 [system_monitor.py:probe():214] Collecting system info
+2025-03-03 12:26:29,459 INFO    SystemMonitor:344687 [interfaces.py:start():188] Started cpu monitoring
+2025-03-03 12:26:29,466 INFO    SystemMonitor:344687 [interfaces.py:start():188] Started disk monitoring
+2025-03-03 12:26:29,468 INFO    SystemMonitor:344687 [interfaces.py:start():188] Started gpu monitoring
+2025-03-03 12:26:29,468 INFO    SystemMonitor:344687 [interfaces.py:start():188] Started memory monitoring
+2025-03-03 12:26:29,469 INFO    SystemMonitor:344687 [interfaces.py:start():188] Started network monitoring
+2025-03-03 12:26:29,471 DEBUG   HandlerThread:344687 [system_info.py:probe():152] Probing system
+2025-03-03 12:26:29,489 DEBUG   HandlerThread:344687 [system_info.py:_probe_git():137] Probing git
+2025-03-03 12:26:29,506 DEBUG   HandlerThread:344687 [system_info.py:_probe_git():145] Probing git done
+2025-03-03 12:26:29,506 DEBUG   HandlerThread:344687 [system_info.py:probe():200] Probing system done
+2025-03-03 12:26:29,506 DEBUG   HandlerThread:344687 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-693.5.2.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.9.6', 'heartbeatAt': '2025-03-03T12:26:29.471666', 'startedAt': '2025-03-03T12:26:28.971207', 'docker': None, 'cuda': None, 'args': ('--n=5',), 'state': 'running', 'program': '/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py', 'codePathLocal': 'main_autoencoder_option4.py', 'codePath': 'vqvae/main_autoencoder_option4.py', 'git': {'remote': 'https://github.com/JointResearchProjectManchester/Neural-Compression-for-Radio-Astronomy.git', 'commit': '4940c66bddfae3a81ad83c69c50b815e0c09acd5'}, 'email': 'deya.03@outlook.com', 'root': '/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy', 'host': 'compute-0-114.local', 'username': 'adey', 'executable': '/share/nas2_3/adey/.venv/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3800.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}, {'current': 3800.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 15.623897552490234, 'used': 7.2653656005859375}}, 'gpu': 'NVIDIA A100-PCIE-40GB', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}], 'memory': {'total': 1511.024055480957}}
+2025-03-03 12:26:29,506 INFO    HandlerThread:344687 [system_monitor.py:probe():224] Finished collecting system info
+2025-03-03 12:26:29,506 INFO    HandlerThread:344687 [system_monitor.py:probe():227] Publishing system info
+2025-03-03 12:26:29,507 INFO    HandlerThread:344687 [system_monitor.py:probe():229] Finished publishing system info
+2025-03-03 12:26:29,518 DEBUG   SenderThread:344687 [sender.py:send():389] send: files
+2025-03-03 12:26:29,518 INFO    SenderThread:344687 [sender.py:_save_file():1423] saving file wandb-metadata.json with policy now
+2025-03-03 12:26:30,035 INFO    wandb-upload_0:344687 [upload_job.py:push():130] Uploaded file /tmp/tmpkc51meuqwandb/3y7l7roc-wandb-metadata.json
+2025-03-03 12:26:30,436 INFO    Thread-12 :344687 [dir_watcher.py:_on_file_created():271] file/dir created: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/wandb-metadata.json
+2025-03-03 12:26:30,488 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: python_packages
+2025-03-03 12:26:30,489 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: python_packages
+2025-03-03 12:26:30,490 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-03 12:26:30,491 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: stop_status
+2025-03-03 12:26:30,499 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-03 12:26:30,708 DEBUG   SenderThread:344687 [sender.py:send():389] send: telemetry
+2025-03-03 12:26:31,440 INFO    Thread-12 :344687 [dir_watcher.py:_on_file_created():271] file/dir created: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/requirements.txt
+2025-03-03 12:26:34,709 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: status_report
+2025-03-03 12:26:40,496 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: status_report
+2025-03-03 12:26:40,496 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-03 12:26:45,490 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-03 12:26:45,490 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: stop_status
+2025-03-03 12:26:45,692 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: status_report
+2025-03-03 12:26:50,496 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-03 12:26:51,496 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: status_report
+2025-03-03 12:26:56,503 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: status_report
+2025-03-03 12:26:57,465 INFO    Thread-12 :344687 [dir_watcher.py:_on_file_created():271] file/dir created: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/output.log
+2025-03-03 12:26:59,470 INFO    Thread-12 :344687 [dir_watcher.py:_on_file_modified():288] file/dir modified: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/output.log
+2025-03-03 12:27:00,490 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-03 12:27:00,490 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: stop_status
+2025-03-03 12:27:00,496 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-03 12:27:01,739 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: status_report
+2025-03-03 12:27:02,210 DEBUG   SenderThread:344687 [sender.py:send():389] send: exit
+2025-03-03 12:27:02,210 INFO    SenderThread:344687 [sender.py:send_exit():577] handling exit code: 1
+2025-03-03 12:27:02,210 INFO    SenderThread:344687 [sender.py:send_exit():579] handling runtime: 32
+2025-03-03 12:27:02,213 INFO    SenderThread:344687 [sender.py:_save_file():1423] saving file wandb-summary.json with policy end
+2025-03-03 12:27:02,214 INFO    SenderThread:344687 [sender.py:send_exit():585] send defer
+2025-03-03 12:27:02,214 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:02,214 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 0
+2025-03-03 12:27:02,214 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:02,214 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 0
+2025-03-03 12:27:02,214 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 1
+2025-03-03 12:27:02,214 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:02,214 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 1
+2025-03-03 12:27:02,214 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:02,214 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 1
+2025-03-03 12:27:02,214 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 2
+2025-03-03 12:27:02,214 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:02,214 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 2
+2025-03-03 12:27:02,214 INFO    HandlerThread:344687 [system_monitor.py:finish():203] Stopping system monitor
+2025-03-03 12:27:02,215 DEBUG   SystemMonitor:344687 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-03-03 12:27:02,215 DEBUG   SystemMonitor:344687 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-03-03 12:27:02,215 DEBUG   SystemMonitor:344687 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-03-03 12:27:02,228 INFO    HandlerThread:344687 [interfaces.py:finish():200] Joined cpu monitor
+2025-03-03 12:27:02,228 INFO    HandlerThread:344687 [interfaces.py:finish():200] Joined disk monitor
+2025-03-03 12:27:02,263 INFO    HandlerThread:344687 [interfaces.py:finish():200] Joined gpu monitor
+2025-03-03 12:27:02,263 INFO    HandlerThread:344687 [interfaces.py:finish():200] Joined memory monitor
+2025-03-03 12:27:02,263 INFO    HandlerThread:344687 [interfaces.py:finish():200] Joined network monitor
+2025-03-03 12:27:02,263 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:02,263 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 2
+2025-03-03 12:27:02,263 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 3
+2025-03-03 12:27:02,264 DEBUG   SenderThread:344687 [sender.py:send():389] send: stats
+2025-03-03 12:27:02,264 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:02,264 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 3
+2025-03-03 12:27:02,264 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:02,264 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 3
+2025-03-03 12:27:02,264 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 4
+2025-03-03 12:27:02,264 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:02,264 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 4
+2025-03-03 12:27:02,264 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:02,264 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 4
+2025-03-03 12:27:02,264 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 5
+2025-03-03 12:27:02,264 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:02,264 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 5
+2025-03-03 12:27:02,265 DEBUG   SenderThread:344687 [sender.py:send():389] send: summary
+2025-03-03 12:27:02,265 INFO    SenderThread:344687 [sender.py:_save_file():1423] saving file wandb-summary.json with policy end
+2025-03-03 12:27:02,265 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:02,265 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 5
+2025-03-03 12:27:02,265 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 6
+2025-03-03 12:27:02,265 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:02,266 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 6
+2025-03-03 12:27:02,266 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:02,266 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 6
+2025-03-03 12:27:02,266 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 7
+2025-03-03 12:27:02,266 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: status_report
+2025-03-03 12:27:02,266 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:02,266 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 7
+2025-03-03 12:27:02,266 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:02,266 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 7
+2025-03-03 12:27:02,472 INFO    Thread-12 :344687 [dir_watcher.py:_on_file_modified():288] file/dir modified: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/config.yaml
+2025-03-03 12:27:02,473 INFO    Thread-12 :344687 [dir_watcher.py:_on_file_created():271] file/dir created: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/wandb-summary.json
+2025-03-03 12:27:03,210 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: poll_exit
+2025-03-03 12:27:04,220 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 8
+2025-03-03 12:27:04,221 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: poll_exit
+2025-03-03 12:27:04,221 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:04,221 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 8
+2025-03-03 12:27:04,222 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:04,222 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 8
+2025-03-03 12:27:04,222 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 9
+2025-03-03 12:27:04,222 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:04,222 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 9
+2025-03-03 12:27:04,222 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:04,222 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 9
+2025-03-03 12:27:04,223 INFO    SenderThread:344687 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-03-03 12:27:04,474 INFO    SenderThread:344687 [dir_watcher.py:_on_file_modified():288] file/dir modified: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/output.log
+2025-03-03 12:27:04,475 INFO    SenderThread:344687 [dir_watcher.py:finish():388] scan: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files
+2025-03-03 12:27:04,475 INFO    SenderThread:344687 [dir_watcher.py:finish():402] scan save: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/config.yaml config.yaml
+2025-03-03 12:27:04,476 INFO    SenderThread:344687 [dir_watcher.py:finish():402] scan save: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/wandb-metadata.json wandb-metadata.json
+2025-03-03 12:27:04,481 INFO    SenderThread:344687 [dir_watcher.py:finish():402] scan save: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/requirements.txt requirements.txt
+2025-03-03 12:27:04,482 INFO    SenderThread:344687 [dir_watcher.py:finish():402] scan save: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/output.log output.log
+2025-03-03 12:27:04,482 INFO    SenderThread:344687 [dir_watcher.py:finish():402] scan save: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/wandb-summary.json wandb-summary.json
+2025-03-03 12:27:04,483 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 10
+2025-03-03 12:27:04,483 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:04,483 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 10
+2025-03-03 12:27:04,483 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:04,484 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 10
+2025-03-03 12:27:04,484 INFO    SenderThread:344687 [file_pusher.py:finish():169] shutting down file pusher
+2025-03-03 12:27:04,826 INFO    wandb-upload_0:344687 [upload_job.py:push():130] Uploaded file /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/config.yaml
+2025-03-03 12:27:04,901 INFO    wandb-upload_1:344687 [upload_job.py:push():130] Uploaded file /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/requirements.txt
+2025-03-03 12:27:04,914 INFO    wandb-upload_3:344687 [upload_job.py:push():130] Uploaded file /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/wandb-summary.json
+2025-03-03 12:27:05,039 INFO    wandb-upload_2:344687 [upload_job.py:push():130] Uploaded file /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/files/output.log
+2025-03-03 12:27:05,211 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: poll_exit
+2025-03-03 12:27:05,212 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: poll_exit
+2025-03-03 12:27:05,240 INFO    Thread-11 :344687 [sender.py:transition_state():605] send defer: 11
+2025-03-03 12:27:05,240 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:05,240 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 11
+2025-03-03 12:27:05,241 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:05,241 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 11
+2025-03-03 12:27:05,241 INFO    SenderThread:344687 [file_pusher.py:join():175] waiting for file pusher
+2025-03-03 12:27:05,241 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 12
+2025-03-03 12:27:05,241 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:05,242 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 12
+2025-03-03 12:27:05,242 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:05,242 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 12
+2025-03-03 12:27:05,242 INFO    SenderThread:344687 [file_stream.py:finish():601] file stream finish called
+2025-03-03 12:27:05,385 INFO    SenderThread:344687 [file_stream.py:finish():605] file stream finish is done
+2025-03-03 12:27:05,386 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 13
+2025-03-03 12:27:05,386 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:05,386 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 13
+2025-03-03 12:27:05,386 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:05,386 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 13
+2025-03-03 12:27:05,386 INFO    SenderThread:344687 [sender.py:transition_state():605] send defer: 14
+2025-03-03 12:27:05,387 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: defer
+2025-03-03 12:27:05,387 INFO    HandlerThread:344687 [handler.py:handle_request_defer():184] handle defer: 14
+2025-03-03 12:27:05,387 DEBUG   SenderThread:344687 [sender.py:send():389] send: final
+2025-03-03 12:27:05,387 DEBUG   SenderThread:344687 [sender.py:send():389] send: footer
+2025-03-03 12:27:05,388 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: defer
+2025-03-03 12:27:05,388 INFO    SenderThread:344687 [sender.py:send_request_defer():601] handle sender defer: 14
+2025-03-03 12:27:05,389 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: poll_exit
+2025-03-03 12:27:05,389 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: poll_exit
+2025-03-03 12:27:05,389 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: get_summary
+2025-03-03 12:27:05,390 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: sampled_history
+2025-03-03 12:27:05,390 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-03 12:27:05,390 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: poll_exit
+2025-03-03 12:27:05,391 DEBUG   SenderThread:344687 [sender.py:send_request():416] send_request: poll_exit
+2025-03-03 12:27:05,391 INFO    MainThread:344687 [wandb_run.py:_footer_history_summary_info():3975] rendering history
+2025-03-03 12:27:05,391 INFO    MainThread:344687 [wandb_run.py:_footer_history_summary_info():4007] rendering summary
+2025-03-03 12:27:05,391 INFO    MainThread:344687 [wandb_run.py:_footer_sync_info():3934] logging synced files
+2025-03-03 12:27:05,392 DEBUG   HandlerThread:344687 [handler.py:handle_request():158] handle_request: shutdown
+2025-03-03 12:27:05,392 INFO    HandlerThread:344687 [handler.py:finish():874] shutting down handler
+2025-03-03 12:27:06,391 INFO    WriterThread:344687 [datastore.py:close():296] close: /share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/wandb/run-20250303_122628-3ptvb5m8/run-3ptvb5m8.wandb
+2025-03-03 12:27:06,391 INFO    SenderThread:344687 [sender.py:finish():1602] shutting down sender
+2025-03-03 12:27:06,391 INFO    SenderThread:344687 [file_pusher.py:finish():169] shutting down file pusher
+2025-03-03 12:27:06,391 INFO    SenderThread:344687 [file_pusher.py:join():175] waiting for file pusher

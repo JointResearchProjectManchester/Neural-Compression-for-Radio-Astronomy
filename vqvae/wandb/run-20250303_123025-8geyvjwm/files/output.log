@@ -1,0 +1,12 @@
+Starting training...
+Shape of images before processing: torch.Size([4, 1, 1, 150, 150])
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 212, in <module>
+    loss = mvg_nll_block(correlation_matrix, images_flat, recon_flat, n)
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 41, in mvg_nll_block
+    log_likelihood += mvn_rem.log_prob(z_rem)
+  File "/share/nas2_3/adey/.venv/lib/python3.9/site-packages/torch/distributions/multivariate_normal.py", line 214, in log_prob
+    self._validate_sample(value)
+  File "/share/nas2_3/adey/.venv/lib/python3.9/site-packages/torch/distributions/distribution.py", line 275, in _validate_sample
+    raise ValueError('The right-most size of value must match event_shape: {} vs {}.'.
+ValueError: The right-most size of value must match event_shape: torch.Size([4, 22500]) vs torch.Size([4]).

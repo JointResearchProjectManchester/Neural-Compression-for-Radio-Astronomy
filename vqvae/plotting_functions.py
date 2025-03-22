@@ -97,7 +97,7 @@ def display_images(original_images, reconstructed_images, num_images=16, step=0)
     plt.tight_layout()
     
     # Save the figure
-    save_directory = '/share/nas2_3/amahmoud/week5/galaxy_out/reconstructed_vqvae.pdf'
+    save_directory = '/share/nas2_3/adey/astro/outputs_sem_2/reconstructed_vqvae.pdf'
     # Log the figure with wandb
     wandb.log({"Reconstructed Images": wandb.Image(f)}, step=None)
     plt.savefig(save_directory)

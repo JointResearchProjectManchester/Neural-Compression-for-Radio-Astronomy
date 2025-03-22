@@ -1,0 +1,16 @@
+
+Starting training...
+Iteration 100, training loss: 82690.4219
+Iteration 200, training loss: 87758.4609
+Iteration 300, training loss: 82445.0938
+Iteration 400, training loss: 82838.8281
+Iteration 500, training loss: 82368.2812
+Iteration 600, training loss: 82391.5625
+Iteration 700, training loss: 82201.3203
+Iteration 800, training loss: 82250.0156
+Iteration 900, training loss: 82108.7500
+Iteration 1000, training loss: 82175.5391
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 310, in <module>
+    total_val_loss += loss_val.item()
+NameError: name 'loss_val' is not defined

@@ -1,0 +1,16 @@
+
+Starting training...
+Iteration 100, training loss: 83154.7266
+Iteration 200, training loss: 84986.4531
+Iteration 300, training loss: 83536.4766
+Iteration 400, training loss: 84543.4062
+Iteration 500, training loss: 82856.8281
+Iteration 600, training loss: 83465.1797
+Iteration 700, training loss: 82963.7969
+Iteration 800, training loss: 82997.3828
+Iteration 900, training loss: 82859.0078
+Iteration 1000, training loss: 82820.7656
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 355, in <module>
+    wandb.log({"validation/loss": avg_val_loss.item(),
+AttributeError: 'float' object has no attribute 'item'

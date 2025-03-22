@@ -1,0 +1,12 @@
+Starting training...
+Shape of images before processing: torch.Size([4, 1, 1, 150, 150])
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 217, in <module>
+    loss = mvg_nll_block(correlation_matrix, images_flat, recon_flat, n)
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 38, in mvg_nll_block
+    log_likelihood += mvn.log_prob(z_i)  # Batched computation
+  File "/share/nas2_3/adey/.venv/lib/python3.9/site-packages/torch/distributions/multivariate_normal.py", line 216, in log_prob
+    M = _batch_mahalanobis(self._unbroadcasted_scale_tril, diff)
+  File "/share/nas2_3/adey/.venv/lib/python3.9/site-packages/torch/distributions/multivariate_normal.py", line 57, in _batch_mahalanobis
+    flat_x = bx.reshape(-1, flat_L.size(0), n)  # shape = c x b x n
+RuntimeError: shape '[-1, 3515625, 12]' is invalid for input of size 48

@@ -1,0 +1,16 @@
+
+Starting training...
+Iteration 100, training loss: 82984.7656
+Iteration 200, training loss: 82312.2891
+Iteration 300, training loss: 82134.9688
+Iteration 400, training loss: 82077.1797
+Iteration 500, training loss: 82122.2969
+Iteration 600, training loss: 82971.3906
+Iteration 700, training loss: 82432.4766
+Iteration 800, training loss: 82478.2969
+Iteration 900, training loss: 82605.3750
+Iteration 1000, training loss: 82131.5859
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 306, in <module>
+    scale_tril_subset = scale_tril[subset_indices][:, subset_indices]
+NameError: name 'loss_val' is not defined

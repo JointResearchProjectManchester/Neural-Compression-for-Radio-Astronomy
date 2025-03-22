@@ -1,0 +1,8 @@
+
+Starting training...
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 261, in <module>
+    loss = block_diagonal_mvg_NLL(cov, images_flat, recon_flat, n, batch_size=images_flat.size(0))
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 35, in block_diagonal_mvg_NLL
+    L_main = torch.linalg.cholesky(cov_main)  # shape: (n, n)
+RuntimeError: linalg.cholesky: A must be batches of square matrices, but they are 12 by 22500 matrices

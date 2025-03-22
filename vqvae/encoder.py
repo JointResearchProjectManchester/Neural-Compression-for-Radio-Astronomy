@@ -33,17 +33,22 @@ import residual_stack
 class Encoder(nn.Module):
     def __init__(self, num_hiddens, num_residual_layers, num_residual_hiddens):
         super(Encoder, self).__init__()
-        self.conv1 = nn.Conv2d(in_channels=1, out_channels=num_hiddens // 2, kernel_size=4, stride=2, padding=1)
-        self.conv2 = nn.Conv2d(in_channels=num_hiddens // 2, out_channels=num_hiddens, kernel_size=4, stride=2, padding=1)
-        self.conv3 = nn.Conv2d(in_channels=num_hiddens, out_channels=num_hiddens, kernel_size=3, stride=1, padding=1)
+        self.conv1 = nn.Conv2d(in_channels=1, out_channels=num_hiddens // 2,
+                               kernel_size=4, stride=2, padding=1)
+        self.bn1 = nn.BatchNorm2d(num_hiddens // 2)
         
-        # Initialize residual stack as a module
-        self.residual_stack = residual_stack.ResidualStack(num_hiddens, num_residual_layers, num_residual_hiddens)
+        self.conv2 = nn.Conv2d(in_channels=num_hiddens // 2, out_channels=num_hiddens,
+                               kernel_size=4, stride=2, padding=1)
+        self.bn2 = nn.BatchNorm2d(num_hiddens)
+        
+        self.residual_stack = residual_stack.ResidualStack(num_hiddens,
+                                                           num_residual_layers,
+                                                           num_residual_hiddens)
 
     def forward(self, x):
-        x = F.relu(self.conv1(x))
-        x = F.relu(self.conv2(x))
-        x = self.conv3(x)
-        # Use the residual stack
-        x = self.residual_stack(x)
+        x = F.relu(self.bn1(self.conv1(x)))  # Conv1 + BatchNorm + ReLU
+        x = self.bn2(self.conv2(x))          # Conv2 + BatchNorm (no activation)
+        x = self.residual_stack(x)           # Residual stack
         return x
+
+

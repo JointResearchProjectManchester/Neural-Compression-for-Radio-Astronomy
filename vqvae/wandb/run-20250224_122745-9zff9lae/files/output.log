@@ -1,0 +1,64 @@
+
+Getting Covariance Matrix & Cholesky Component...
+Starting training...
+Shape of images before processing: torch.Size([4, 1, 1, 150, 150])
+Traceback (most recent call last):
+  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder.py", line 139, in <module>
+    mvn = MultivariateNormal(loc=recon_flat_subset, scale_tril=scale_tril_subset)
+  File "/share/nas2_3/adey/.venv/lib/python3.9/site-packages/torch/distributions/multivariate_normal.py", line 150, in __init__
+    super(MultivariateNormal, self).__init__(batch_shape, event_shape, validate_args=validate_args)
+  File "/share/nas2_3/adey/.venv/lib/python3.9/site-packages/torch/distributions/distribution.py", line 56, in __init__
+    raise ValueError(
+ValueError: Expected parameter scale_tril (Tensor of shape (4, 2500, 2500)) of distribution MultivariateNormal(loc: torch.Size([4, 2500]), scale_tril: torch.Size([4, 2500, 2500])) to satisfy the constraint LowerCholesky(), but found invalid values:
+tensor([[[ 9.7903e-01, -1.4013e-45,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  9.7903e-01,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  9.7903e-01,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         ...,
+         [ 0.0000e+00,  0.0000e+00, -8.1174e-14,  ...,  9.7903e-01,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  ...,  0.0000e+00,
+           9.7903e-01,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  9.7903e-01]],
+        [[ 9.7903e-01, -1.4013e-45,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  9.7903e-01,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  9.7903e-01,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         ...,
+         [ 0.0000e+00,  0.0000e+00, -8.1174e-14,  ...,  9.7903e-01,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  ...,  0.0000e+00,
+           9.7903e-01,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  9.7903e-01]],
+        [[ 9.7903e-01, -1.4013e-45,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  9.7903e-01,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  9.7903e-01,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         ...,
+         [ 0.0000e+00,  0.0000e+00, -8.1174e-14,  ...,  9.7903e-01,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  ...,  0.0000e+00,
+           9.7903e-01,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  9.7903e-01]],
+        [[ 9.7903e-01, -1.4013e-45,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  9.7903e-01,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  9.7903e-01,  ...,  0.0000e+00,
+           0.0000e+00,  0.0000e+00],
+         ...,
+         [ 0.0000e+00,  0.0000e+00, -8.1174e-14,  ...,  9.7903e-01,
+           0.0000e+00,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  ...,  0.0000e+00,
+           9.7903e-01,  0.0000e+00],
+         [ 0.0000e+00,  0.0000e+00,  0.0000e+00,  ...,  0.0000e+00,
+           0.0000e+00,  9.7903e-01]]], device='cuda:0')
