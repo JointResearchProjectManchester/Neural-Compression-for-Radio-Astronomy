@@ -1,8 +1,0 @@
-
-Starting training...
-Traceback (most recent call last):
-  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 240, in <module>
-    loss = block_diagonal_mvg_NLL(cov, images_flat, recon_flat, n, batch_size=images_flat.size(0))
-  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 43, in block_diagonal_mvg_NLL
-    y_main = torch.linalg.solve_triangular(L_blocks_batch, z_main_unsq, lower=True).squeeze(-1)
-TypeError: linalg_solve_triangular() missing 1 required positional arguments: "upper"

@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option2.py", line 135, in <module>
-    correlation_matrix = find_covariance_matrix(image_size, sigma)
-  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option2.py", line 54, in find_covariance_matrix
-    sigma = fwhm / (2 * np.sqrt(2 * np.log(2))) * u.arcsec
-NameError: name 'u' is not defined

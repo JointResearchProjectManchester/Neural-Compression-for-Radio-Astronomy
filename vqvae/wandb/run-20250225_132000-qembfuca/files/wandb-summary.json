@@ -1,1 +1,0 @@
-{"train/loss": 80927.078125, "train/bits_per_dim": 1.297256588935852, "train/mahalanobis_distance": 229.78125, "_timestamp": 1740489720.6998742, "_runtime": 119.68706607818604, "_step": 999, "_wandb": {"runtime": 119}}

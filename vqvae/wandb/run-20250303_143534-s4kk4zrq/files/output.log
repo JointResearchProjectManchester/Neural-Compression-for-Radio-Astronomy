@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option2.py", line 109, in <module>
-    scale_tril = torch.linalg.cholesky(correlation_matrix)
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.89 GiB (GPU 0; 39.41 GiB total capacity; 1.89 GiB already allocated; 1.47 GiB free; 1.91 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

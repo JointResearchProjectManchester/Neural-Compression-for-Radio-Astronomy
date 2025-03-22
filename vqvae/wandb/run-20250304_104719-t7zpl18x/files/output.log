@@ -1,8 +1,0 @@
-
-Starting training...
-Traceback (most recent call last):
-  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 241, in <module>
-    loss = mvg_nll_block(cov, images_flat, recon_flat, n, batch_size=images_flat.size(0))
-  File "/share/nas2_3/adey/github/Neural-Compression-for-Radio-Astronomy/vqvae/main_autoencoder_option4.py", line 36, in mvg_nll_block
-    B = cov[:, i*n:(i+1)*n, i*n:(i+1)*n].to(x.device)  # Block covariance matrix on GPU
-IndexError: too many indices for tensor of dimension 2
